@@ -15,7 +15,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "https://meditations-daily.onrender.com/",
+  "start_url": "/index.html",
   "orientation": "any",
   "display": "standalone",
   "dir": "auto",
