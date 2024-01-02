@@ -20,8 +20,8 @@
   "display": "standalone",
   "dir": "auto",
   "lang": "en-US",
-  "short_name": "⊙",
-  "name": "Meditations",
-  "description": "Meditations by Marcus Aurelius",
+  "short_name": "Meditations",
+  "name": "Meditations Daily",
+  "description": "Daily paragraphs from Meditations by Marcus Aurelius",
   "id": "Meditations"
 }
