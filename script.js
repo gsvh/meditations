@@ -2571,6 +2571,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!currentIndex) {
     currentIndex = 0
     localStorage.setItem('index', currentIndex)
+    setContent(currentIndex)
+    return
   }
   const paragraphIndex = parseInt(currentIndex) + 1
   localStorage.setItem('index', paragraphIndex)
