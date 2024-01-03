@@ -1,5 +1,3 @@
-// for manifest ⊙
-
 const paragraphs = [
   {
     book: 'Book One',
@@ -2567,16 +2565,16 @@ function decrementIndex() {
 
 // set inital content based on date the user first visited the site
 document.addEventListener('DOMContentLoaded', () => {
-  let currentIndex = localStorage.getItem('index')
-  if (!currentIndex) {
-    currentIndex = 0
-    localStorage.setItem('index', currentIndex)
-    setContent(currentIndex)
+  currentParagraphIndex = localStorage.getItem('index')
+  if (!currentParagraphIndex) {
+    currentParagraphIndex = 0
+    localStorage.setItem('index', currentParagraphIndex)
+    setContent(currentParagraphIndex)
     return
   }
-  const paragraphIndex = parseInt(currentIndex) + 1
-  localStorage.setItem('index', paragraphIndex)
-  setContent(paragraphIndex)
+  currentParagraphIndex = parseInt(currentIndex) + 1
+  localStorage.setItem('index', currentParagraphIndex)
+  setContent(currentParagraphIndex)
 })
 
 // add button event listeners
