@@ -2565,14 +2565,14 @@ function decrementIndex() {
 
 // set inital content based on date the user first visited the site
 document.addEventListener('DOMContentLoaded', () => {
-  currentParagraphIndex = localStorage.getItem('index')
-  if (!currentParagraphIndex) {
+  let storedIndex = localStorage.getItem('index')
+  if (!storedIndex) {
     currentParagraphIndex = 0
     localStorage.setItem('index', currentParagraphIndex)
     setContent(currentParagraphIndex)
     return
   }
-  currentParagraphIndex = parseInt(currentIndex) + 1
+  currentParagraphIndex = parseInt(storedIndex) + 1
   localStorage.setItem('index', currentParagraphIndex)
   setContent(currentParagraphIndex)
 })
