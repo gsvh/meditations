@@ -1,7 +1,7 @@
 self.addEventListener('install', (event) => {
   console.log('Service worker installed')
   event.waitUntil(
-    caches.open('my-cache').then((cache) => {
+    caches.open('meditations-cache').then((cache) => {
       return cache.addAll([
         './',
         './index.html',
